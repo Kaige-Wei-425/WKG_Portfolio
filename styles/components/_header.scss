@@ -1,0 +1,66 @@
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+@import "./utils";
+
+//Small mobile devices first.
+header {
+    background-color: $background-primary;
+    #logo {
+        text-align: center;
+        width: auto;
+        img {
+            @include image-config();
+        }   
+    }
+
+    #nav-items {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        font-size: larger;
+        a {
+            padding: 5px;
+            color: $font-primary;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $font-secondary;
+            font-size: 1.1rem;
+        }
+    }
+
+    // Medium mobile devieces
+    @media screen and (min-width: $small) and (max-width: $medium) {
+        #logo {
+            text-align: start;
+            width: 45%;
+        }
+        
+        #nav-items {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+    // Destops and larger screen devices
+    @media screen and (min-width: $medium) {
+        #logo {
+            text-align: start;
+            width: 25%;
+            img {
+                @include image-config;
+                margin-bottom: 0;
+            }
+        }
+
+        #nav-items {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+
+}
+
