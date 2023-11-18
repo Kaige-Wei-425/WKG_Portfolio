@@ -7,39 +7,77 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="./styles/pages/home.css">
+    <script src="./js/script.js"></script>
 
     <!-- Link to font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
 </head>
 
 <body>
-    <header>
-        <div>
-            <a href="">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-            
-        </div>
+    <header>    
         <div id="logo">
             <a href="./index.html">
                 <img src="./images/logo.png" alt="logo">
             </a>
         </div>
 
-        <nav id="nav-items">
-            <a href="">About</a>
-            <a href="">Skills</a>
-            <a href="">Resume</a>
-            <a href="">Blog</a>
-            <a href="">Contact</a>
+        <button class="open-btn" onclick="sidebar_open()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav" id="sidebar">
+            <ul>
+                <li>
+                    <button class="close-btn" onclick="sidebar_close()">
+                        <i class="fa-solid fa-house"></i>
+                    </button>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-person"></i>
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-clipboard"></i>
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-file"></i>
+                        Resume
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-blog"></i>
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
         </nav>
+
+        
     </header>
 
-    <main></main>
+    <main>
+        
+    </main>
 
     <footer></footer>
+    
 </body>
 
 </html>
