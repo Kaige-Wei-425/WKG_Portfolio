@@ -2,6 +2,7 @@
 @import "../defaults/breakpoints";
 @import "./utils";
 
+// Design for smaller-screen and mobile devices first.
 header {
     background-color: $background-primary;
     display: flex;
@@ -40,6 +41,8 @@ header {
                 padding: 10px;
                 a {
                     font-size: 1.3rem;
+                    font-weight: bolder;
+                    font-family: 'Courier New', Courier, monospace;
                     color: $font-primary;
                     text-decoration: none;
                     text-align: center;
@@ -54,8 +57,49 @@ header {
             }
         }
     }
+    #navbar {
+        display: none;
+    }
+}
 
+// Customize for larger-screen and destops devices.
+@media screen and (min-width: $medium) {
+    header {
+        justify-content: space-between;
+        #sidebar {
+            display: none;
+        }
+        .open-btn {
+            display: none;
+        }
 
+        #navbar {
+            display: block;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
 
+                li {
+                    float: left;
 
+                    a{
+                        font-weight: bolder;
+                        font-family: 'Courier New', Courier, monospace;
+                        display: block;
+                        color: $font-primary;
+                        text-decoration: none;
+                        text-align: center;
+                        padding: 20px 23px;
+                        transition: 0.3s;
+                        &:hover {
+                            color: $background-primary;
+                            background-color: $background-third;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

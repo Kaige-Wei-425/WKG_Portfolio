@@ -36,6 +36,8 @@ header #sidebar ul li {
 }
 header #sidebar ul li a {
   font-size: 1.3rem;
+  font-weight: bolder;
+  font-family: "Courier New", Courier, monospace;
   color: rgb(255, 255, 255);
   text-decoration: none;
   text-align: center;
@@ -46,7 +48,47 @@ header #sidebar ul li a:hover {
   color: rgb(0, 0, 0);
   background-color: #ddd;
 }
+header #navbar {
+  display: none;
+}
 
+@media screen and (min-width: 769px) {
+  header {
+    justify-content: space-between;
+  }
+  header #sidebar {
+    display: none;
+  }
+  header .open-btn {
+    display: none;
+  }
+  header #navbar {
+    display: block;
+  }
+  header #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  header #navbar ul li {
+    float: left;
+  }
+  header #navbar ul li a {
+    font-weight: bolder;
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 23px;
+    transition: 0.3s;
+  }
+  header #navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ddd;
+  }
+}
 body {
   margin: 0;
 }/*# sourceMappingURL=home.css.map */
