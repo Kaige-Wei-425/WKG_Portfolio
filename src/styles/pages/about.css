@@ -146,9 +146,24 @@ main .intro .photo img {
   height: auto;
   display: block;
   border-radius: 100%;
-  opacity: 0.5;
-  overflow: hidden;
 }
 main .intro .photo img:hover {
-  opacity: 0.9;
+  opacity: 0.5;
+}
+main .image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+}
+main .image-gallery .gallery-item {
+  overflow: hidden;
+  position: relative;
+}
+main .image-gallery .gallery-item img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }/*# sourceMappingURL=about.css.map */
