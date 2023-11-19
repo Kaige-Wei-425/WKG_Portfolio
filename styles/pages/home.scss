@@ -1,2 +1,42 @@
 @import "../../index";
+@import "../defaults/colors";
+@import "../components/utils";
+main {
+    .intro-home {
+        color: $font-primary;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        p {
+            animation: cursor-anim 1.5s infinite, type-anim 5s 1 steps(60, end);
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            font-size: 2rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+    
+    img {
+        @include image-config();
+    }
+}
+@keyframes type-anim {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
 
+@keyframes cursor-anim {
+    from {
+        border-right: none;
+    }
+    to {
+        border-right: 2px solid $font-primary;
+    }
+}
+  

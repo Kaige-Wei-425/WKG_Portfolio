@@ -3,6 +3,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 header #logo {
   width: auto;
@@ -81,7 +85,7 @@ header #navbar {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
-    padding: 20px 23px;
+    padding: 20px 20px;
     transition: 0.3s;
   }
   header #navbar ul li a:hover {
@@ -94,9 +98,9 @@ footer {
   color: rgb(255, 255, 255);
   text-align: center;
   position: fixed;
-  width: 100%;
   left: 0;
   bottom: 0;
+  width: 100%;
   padding: 20px 0;
 }
 footer ul {
@@ -117,4 +121,5 @@ footer ul li a:hover {
 
 body {
   margin: 0;
+  background-color: rgb(0, 0, 0);
 }/*# sourceMappingURL=resume.css.map */

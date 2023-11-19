@@ -3,6 +3,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 header #logo {
   width: auto;
@@ -81,7 +85,7 @@ header #navbar {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
-    padding: 20px 23px;
+    padding: 20px 20px;
     transition: 0.3s;
   }
   header #navbar ul li a:hover {
@@ -94,9 +98,9 @@ footer {
   color: rgb(255, 255, 255);
   text-align: center;
   position: fixed;
-  width: 100%;
   left: 0;
   bottom: 0;
+  width: 100%;
   padding: 20px 0;
 }
 footer ul {
@@ -117,4 +121,42 @@ footer ul li a:hover {
 
 body {
   margin: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+main .intro-home {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .intro-home p {
+  animation: cursor-anim 1.5s infinite, type-anim 5s 1 steps(60, end);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+}
+main img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@keyframes type-anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes cursor-anim {
+  from {
+    border-right: none;
+  }
+  to {
+    border-right: 2px solid rgb(255, 255, 255);
+  }
 }/*# sourceMappingURL=home.css.map */
