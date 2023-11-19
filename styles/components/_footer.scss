@@ -1,0 +1,30 @@
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+@import "./utils";
+
+footer {
+    background-color: $background-primary;
+    color: $font-primary;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 20px 0;
+
+    ul {
+        list-style-type: none;
+        li {
+            display: inline-block;
+            margin: 0px 15px;
+            a{
+                color: $font-primary;
+                font-size: 1.3rem;
+                &:hover {
+                    color: $background-third;
+                    font-size: 1.1rem;
+                }
+            }
+        }        
+    }
+}
