@@ -1,6 +1,7 @@
 @import "../../index";
 @import "../defaults/colors";
 @import "../components/utils";
+@import "../defaults/breakpoints";
 main {
     .intro-home {
         color: $font-primary;
@@ -8,6 +9,7 @@ main {
         top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
+
         p {
             animation: cursor-anim 1.5s infinite, type-anim 5s 1 steps(60, end);
             white-space: nowrap;
@@ -37,6 +39,14 @@ main {
     }
     to {
         border-right: 2px solid $font-primary;
+    }
+}
+
+@media screen and (max-width: $medium) {
+    main {
+        .intro-home {
+            display: none;
+        }
     }
 }
   
