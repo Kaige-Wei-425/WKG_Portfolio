@@ -1,6 +1,11 @@
 # My Portfolio
 Hi, I'm Kaige Wei, an aspiring and enthusiastic full stack developer with strong passion for web design and developing. Focus on website development with problem-solving techniques and soild software engineering functions in multiple programming languages. Eager to cooperate and contribute to team works.
 
+## Links
+* __Website:__
+* __Github:__ https://github.com/Kaige-Wei-425/WKG_Portfolio
+* __Presentation Video:__
+
 ## Purpose
 ### Why Explore My Portfolio?
 * __Know About Me__: Konw my personalities and my hobbies.
