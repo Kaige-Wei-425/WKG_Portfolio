@@ -160,10 +160,34 @@ body main .skills-grid .grid-items ul {
 body main .skills-grid .grid-items ul li {
   padding-top: 10px;
 }
+body main .skills-grid #resume {
+  background-color: rgb(241, 236, 236);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 5/-1;
+  grid-row: 2/3;
+  height: 30%;
+  width: 50%;
+  background-color: rgb(56, 190, 235);
+  box-shadow: 3px 5px;
+}
+body main .skills-grid #resume:hover {
+  box-shadow: 6px 8px;
+  background-color: rgb(228, 103, 103);
+}
+body main .skills-grid #resume a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+}
+body main .skills-grid #resume a:hover {
+  color: rgb(0, 0, 0);
+}
 body main .skills-grid #languages {
   background-color: rgb(241, 236, 236);
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   grid-column: 2/3;
   grid-row: 2/4;
@@ -171,7 +195,7 @@ body main .skills-grid #languages {
 body main .skills-grid #things {
   background-color: rgb(241, 236, 236);
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   grid-column: 3/4;
   grid-row: 2/4;
@@ -179,7 +203,7 @@ body main .skills-grid #things {
 body main .skills-grid #tools {
   background-color: rgb(241, 236, 236);
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   grid-column: 4/5;
   grid-row: 2/4;
