@@ -4,7 +4,7 @@ Hi, I'm Kaige Wei, an aspiring and enthusiastic full stack developer with strong
 ## Links
 * __Website:__
 * __Github:__ https://github.com/Kaige-Wei-425/WKG_Portfolio
-* __Presentation Video:__
+* __Presentation Video:__ https://youtu.be/9EUxI7v-3UQ
 
 ## Purpose
 ### Why Explore My Portfolio?
@@ -16,7 +16,7 @@ Hi, I'm Kaige Wei, an aspiring and enthusiastic full stack developer with strong
 ## Functionalities
 * __Image Gallery__: Browse the images of my two little cats with animation applied.
 * __Responsive Design__: Ensures a seamless experience across various devices with multiple screen sizes.
-* __Downloadable Resuem__: Option to view and download my resume as PDF.
+* __Downloadable Resume__: Option to view and download my resume as PDF.
 * __Contact Form__: A way for you to directly through the website.
 * __Social Media__: Option to view and connect to my social media.
 
