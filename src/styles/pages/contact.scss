@@ -1,1 +1,37 @@
 @import "../../index";
+@import "../defaults/colors";
+
+body {
+    background-color: $background-fourth;
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20vh;
+        font-family: 'Courier New', Courier, monospace;
+        .contact {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .contact-info {
+                list-style-type: none;
+            }
+
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                background-color: $font-primary;
+                padding: 50px;
+                border: 2px solid black;
+                border-radius: 10%;
+                box-shadow: 5px 5px;
+                textarea {
+                    resize: none;
+                }
+            }
+        }
+    }
+}
