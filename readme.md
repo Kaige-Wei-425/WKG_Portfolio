@@ -2,7 +2,7 @@
 Hi, I'm Kaige Wei, an aspiring and enthusiastic full stack developer with strong passion for web design and developing. Focus on website development with problem-solving techniques and soild software engineering functions in multiple programming languages. Eager to cooperate and contribute to team works.
 
 ## Links
-* __Website:__
+* __Website:__ https://gorgeous-sprinkles-2694f4.netlify.app/
 * __Github:__ https://github.com/Kaige-Wei-425/WKG_Portfolio
 * __Presentation Video:__ https://youtu.be/9EUxI7v-3UQ
 
